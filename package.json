@@ -1,0 +1,26 @@
+{
+  "name": "@falaksingh/logger",
+  "version": "1.0.0",
+  "author": "Falak Singh",
+  "license": "ISC",
+  "description": "",
+  "main": "./dist/index.js",
+  "directories": {
+    "src": "src"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsup"
+  },
+  "devDependencies": {
+    "tsup": "^8.3.6"
+  },
+  "dependencies": {
+    "@falaksingh/sketch": "^1.0.0",
+    "@types/node": "^22.13.0",
+    "typescript": "^5.7.3"
+  },
+  "files": [
+    "dist/**/*"
+  ]
+}
