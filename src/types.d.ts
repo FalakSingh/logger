@@ -1,8 +1,9 @@
 export type TConfig = {
-  writeToDisk?: boolean;
+  writeToDisk?: { enable: boolean; errorfilePath?: string; infoFilePath?: string };
   absolutePathForLogs?: string;
-  enableErrorTrace?: boolean;
+  parseErrorInstance?: boolean;
   enableLineSeparator?: boolean;
+  enableTerminalColorizer?: boolean;
 };
 
 export type TPayload = string | object | Error;

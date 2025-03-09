@@ -6,4 +6,5 @@ class Logger extends GenericLogger {
     super(config);
   }
 }
+
 export default Logger;
