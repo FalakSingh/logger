@@ -1,10 +1,2 @@
-import GenericLogger from './loggers/generic-logger';
-import { TConfig } from './types';
-
-class Logger extends GenericLogger {
-  constructor(config: TConfig = {}) {
-    super(config);
-  }
-}
-
+import Logger from './logger';
 export default Logger;

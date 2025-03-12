@@ -4,7 +4,7 @@ import errorMethods from '../util/error-methods';
 import DiskWriter from '../helpers/disk-writer';
 import { timestamp } from '../util/timestamp';
 
-class GenericLogger {
+class Logger {
   private parseErrorInstance: boolean;
   private enableLineSeparator: boolean;
   private diskWriter: DiskWriter | null;
@@ -95,4 +95,4 @@ class GenericLogger {
   }
 }
 
-export default GenericLogger;
+export default Logger;

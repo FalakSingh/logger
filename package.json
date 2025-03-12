@@ -2,15 +2,28 @@
   "name": "@falaksingh/logger",
   "version": "1.0.0",
   "author": "Falak Singh",
-  "license": "ISC",
-  "description": "",
+  "license": "MIT",
+  "description": "A lightweight logger utility",
   "main": "./dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
   "directories": {
     "src": "src"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FalakSingh/logger"
+  },
+  "keywords": ["logger", "logging", "utility"],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsup"
+    "build": "tsup",
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "tsup": "^8.3.6"
